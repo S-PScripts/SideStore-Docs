@@ -49,7 +49,7 @@ LiveContainer+SideStore에서는 이 기능이 *현재* **미리보기** 릴리�
 7. SideStore를 새로고침 하여 모든 기능이 정삭적으로 작동하는지 확인하세요.
 8. 만약 7번 단계가 작동하지 않으면, SideStore 설정으로 이동하여 아래로 스크롤한 후 VPN Configuration를 클릭하여 Device IP를 10.7.0.1로 선택하세요. (또는 대상 LocalDevVPN IP들을 수정한 경우, 그거에 맞게 설정하세요.)
 9. 만약 8번 단계가 작동하지 않으면, anisette를 Macley로 변경하세요.
-10. 만약 9번 단계가 작동하지 않으면, 당신의 iDevice를 재시작 하세요.
+10. 만약 9번 단계가 작동하지 않으면, 당신의 iDevice를 재시작하세요.
 
 ### (1007) This app is in an invalid format.
 `SideStore.OperationError 1007`
@@ -64,7 +64,7 @@ LiveContainer+SideStore에서는 이 기능이 *현재* **미리보기** 릴리�
 ### (1009) You cannot register more than 10 App IDs within a 7-day period.
 `SideStore.OperationError 1009`
 
-이는 사용 가능한 앱 ID의 최대 한도에 도달했음을 의미합니다. 앱 ID는 수동으로 삭제할 수 없습니다. 앱 ID는 앱이 처음 설치되거나 마지막으로 갱신된 시점으로부터 7일이 지나면 갱신되며, 그 이후에 삭제된 경우에는 만료됩니다. My Apps 탭에서 App ID를 확인하여 언제 만료되는지 확인해 주세요.
+이는 사용 가능한 앱 ID의 최대한도에 도달했음을 의미합니다. 앱 ID는 수동으로 삭제할 수 없습니다. 앱 ID는 앱이 처음 설치되거나 마지막으로 갱신된 시점으로부터 7일이 지나면 갱신되며, 그 이후에 삭제된 경우에는 만료됩니다. My Apps 탭에서 App ID를 확인하여 언제 만료되는지 확인해 주세요.
 
 ### (1010) There are no SideStore sources.
 `SideStore.OperationError 1010`
@@ -255,7 +255,7 @@ https://developer.apple.com/ 으로 이동하여 로그인한 후, 새로운 App
 오류를 해결하기 위해 다음 단계를 따라주세요:
 
 1. [Feather](https://github.com/khcrysalis/Feather/releases/latest)를 설치해 주세요.
-2. 이 문제가 있는 IPA 파일과 임의의 .mobileprovision 및 .p12 파일을 Feather로 가져오세요(이 앱을 IPA의 헤더를 재할당하는 용도로만 사용할 것이므로, 해당 파일들의 유효 기간이 만료되었더라도 상관없습니다).
+2. 이 문제가 있는 IPA 파일과 임의의 .mobileprovision 및 .p12 파일을 Feather로 가져오세요(이 앱을 IPA의 헤더를 재할당하는 용도로만 사용할 것이므로, 해당 파일들의 유효 기간이 만료되었더라도 상관없습니다.)
 3. 가져온 인증서로 IPA 파일에 서명하세요.
 4. 파일 앱에서 서명된 앱을 열고 다시 IPA 파일로 압축하세요.
 5. SideStore에 압축된 IPA 파일을 설치하세요.

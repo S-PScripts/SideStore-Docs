@@ -23,7 +23,7 @@ import TabItem from '@theme/TabItem';
    1. Linux 터미널에서 `sudo apt install -y usbmuxd`를 실행해 usbmuxd가 설치돼 있고 최신버전인지 확인해 주세요.
    2. 기기에 Docker나 Podman 중 하나를 설치해 주세요.
    2. iDevice를 연결해 주세요. 프롬프트가 나오면 “신뢰”를 선택하고 암호를 입력해 주세요.
-   3. 아래 명령으로 Docker나 Podman에서 Altcon을 실행해 주세요(상황에 따라 `sudo`가 필요할 수 있어요).
+   3. 아래 명령으로 Docker나 Podman에서 Altcon을 실행해 주세요(상황에 따라 `sudo`가 필요할 수 있어요.)
 
    Docker:
    ```bash
@@ -42,7 +42,7 @@ import TabItem from '@theme/TabItem';
 #### AltServer를 사용하여 동일 계정 내 여러 기기에서 SideStore 설정하기
 순서는 이래요:
 1. 위 안내대로 macOS나 Windows에서 AltServer를 설정해 주세요.
-2. AltServer로 기기 하나에 AltStore를 설치해 주세요(AltStore 외 앱에는 AltServer가 머신 식별자를 넣지 않는 것 같아서 한 번은 AltStore가 필요해요).
+2. AltServer로 기기 하나에 AltStore를 설치해 주세요(AltStore 외 앱에는 AltServer가 머신 식별자를 넣지 않는 것 같아서 한 번은 AltStore가 필요해요.)
 3. AltStore에서 Apple ID로 로그인해 주세요.
 4. 인증서를 내보내 주세요.
 5. AltStore를 삭제해 주세요.
@@ -71,7 +71,7 @@ import TabItem from '@theme/TabItem';
 
 1. WireGuard 앱을 [공식 App Store](https://apps.apple.com/app/wireguard/id1441195209)에서 다운로드해 주세요.
 2. 또한, [여기](https://github.com/SideStore/SideStore/releases/download/0.3.1/SideStore.conf)에서 WireGuard 설정 파일을 다운로드해 주세요.
-3. WireGuard를 열고 '터널 추가' 또는 '+' 버튼을 눌러주세요.
+3. WireGuard를 열고 '터널 추가' 또는 '+' 버튼을 탭하세요.
 4. '파일 또는 아카이브에서 생성'을 선택하고 SideStore.conf 파일을 선택해 주세요.
 5. 장치에서 'VPN 구성 허용'을 묻는 메시지가 표시될 수 있습니다. '허용'을 선택하고 인증해 주세요.
 6. 사이드스토어 VPN 옵션을 켜주세요.
@@ -102,7 +102,7 @@ import TabItem from '@theme/TabItem';
 1. 보조 기기를 케이블로 컴퓨터에 연결해 주세요. 프롬프트가 나오면 `신뢰`를 선택하고 암호를 입력해 주세요.
 2. 기기 잠금을 해제한 뒤 `idevice pair`를 열어 드롭다운에서 기기를 선택해 주세요.
 3. 기기가 잠금 해제돼 홈 화면인지 확인한 뒤 `load`를 선택해 주세요. 기기에 프롬프트가 나오면 `신뢰`를 탭해 주세요. 페어링 파일이 표시될 거예요.
-4. 기기가 여전히 홈 화면인지 확인한 뒤 아래로 스크롤해 "SideStore" 아래의 `install`을 눌러 주세요. 초록색 `Success` 메시지가 보일 거예요.
+4. 기기가 여전히 홈 화면인지 확인한 뒤 아래로 스크롤해 "SideStore" 아래의 `install`을 탭하세요. 초록색 `Success` 메시지가 보일 거예요.
 
 ### JitterbugPair
 JitterbugPair(모바일 앱인 Jitterbug와는 달라요)는 SideStore 같은 프로그램이 기기와 원격 통신할 수 있도록 페어링 파일을 만들어 줘요. SideStore를 쓰려면 반드시 필요하고, 없으면 작동하지 않아요.
@@ -123,7 +123,7 @@ JitterbugPair(모바일 앱인 Jitterbug와는 달라요)는 SideStore 같은 �
    3. 아직 안 했다면 기기 **잠금 암호를 설정**해 주세요. 기기를 잠금 해제하고 컴퓨터에 연결한 뒤 프롬프트가 나오면 “신뢰”를 선택하고 암호를 입력해 주세요.
    4. 기기를 홈 화면으로 이동시켜 주세요.
    5. 압축 해재한 `jitterbugpair` 파일(검은색과 초록색 아이콘)을 찾아 더블 클릭하거나 마우스 오른쪽 버튼으로 “열기”를 선택해 실행해 주세요. 도구를 처음 실행하면 보조 기기에 암호 입력 프롬프트가 뜰 거예요. 암호를 입력하고 화면을 켠 채 잠금 해제 상태로 다시 실행해 주세요.
-   6. “macOS에서 이 앱이 악성 코드로부터 안전한지 확인할 수 없어요”라는 메시지가 뜨면 이렇게 해 주세요.
+   6. “macOS에서 이 앱이 악성 코드로부터 안전한지 확인할 수 없습니다”라는 메시지가 뜨면 이렇게 해 주세요.
    - 설정 > 개인정보 보호 및 보안으로 이동해 주세요.
    - 해당 앱 메시지가 보일 때까지 스크롤해 주세요.
    - “그래도 열기”를 클릭해 주세요. 자동으로 실행되지 않으면 다시 실행해 주세요.
@@ -147,12 +147,12 @@ JitterbugPair(모바일 앱인 Jitterbug와는 달라요)는 SideStore 같은 �
 
    8. 파일 탐색기에서 jitterbugpair가 있는 폴더로 이동해 주세요.
    9. 주소 표시줄의 빈 공간을 클릭하고 `powershell`을 입력해 주세요. PowerShell 창이 열릴 거예요.
-   10. 기기가 연결된 상태에서 `./jitterbugpair.exe`를 입력하고 Enter를 눌러 주세요.
+   10. 기기가 연결된 상태에서 `./jitterbugpair.exe`를 입력하고 Enter를 입력해 주세요.
 
   </TabItem>
   <TabItem value="linux" label="Linux">
    이 안내는 Linux 명령줄에 익숙하다고 가정해요.
-   1. [Linux용 ](https://github.com/osy/Jitterbug/releases/download/v1.3.1/jitterbugpair-linux.zip) JitterbugPair를 다운로드 해주세요.
+   1. [Linux용 ](https://github.com/osy/Jitterbug/releases/download/v1.3.1/jitterbugpair-linux.zip) JitterbugPair를 다운로드해 주세요.
    2. `jitterbugpair-linux.zip`을 **압축 해제**해 주세요.
    3. 추출한 디렉터리에서 터미널을 열어 주세요.
    4. 프로그램 실행 권한을 주세요.
@@ -172,9 +172,9 @@ JitterbugPair(모바일 앱인 Jitterbug와는 달라요)는 SideStore 같은 �
 </Tabs>
 
 ## SideStore 익스플로잇
-### SparseRestore (앱 3개 제한)
+### SparseRestore (앱 3개 제한 후회)
 :::note
-SparseRestore “앱 3개 제한 우회” 익스플로잇은 **iOS/iPadOS 17.0~18.1 beta 4(17.7.1 제외)**에서만 작동해요. 해당 버전에 있지 않은데 동작하지 않는다고 해서 **지원 요청은 삼가 주세요.**
+SparseRestore "앱 3개 제한 우회" 익스플로잇은 **iOS/iPadOS 17.0~18.1 beta 4(17.7.1 제외)**에서만 작동해요. 해당 버전에 있지 않은데 동작하지 않는다고 해서 **지원 요청은 삼가해 주세요.**
 :::
 
 #### 준비물
@@ -198,7 +198,7 @@ SparseRestore “앱 3개 제한 우회” 익스플로잇은 **iOS/iPadOS 17.0~
 
 3. StosVPN을 켜고 페어링 파일을 선택한 뒤 “Bypass 3-app limit”을 탭해 주세요. 로그가 표시될 거예요. `idevicebackup2 exited with code -18` 또는 `idevicebackup2 exited with code 2`가 나올 때까지 기다렸다가 앱을 닫아 주세요. Apply를 누를 필요는 없어요.
 
-4. SideStore를 다시 열고 설정에서 아래로 스크롤해 “clear cache”를 눌러 주세요. 그래야 SideStore가 익스플로잇 상태를 감지해요.
+4. SideStore를 다시 열고 설정에서 아래로 스크롤해 “clear cache”를 탭하세요. 그래야 SideStore가 익스플로잇 상태를 감지해요.
 
 5. 익스플로잇이 성공했는지 테스트해 주세요(빈 슬롯 수에 따라 앱을 여러 개 설치해야 할 수도 있어요). 제한 관련 오류가 나오면 SideStore를 다시 열거나 익스플로잇을 다시 시도해 주세요. 설치가 되면 성공이에요! 이제 한 번에 3개 이상 앱을 설치할 수 있어요.
 
@@ -207,10 +207,46 @@ SparseRestore “앱 3개 제한 우회” 익스플로잇은 **iOS/iPadOS 17.0~
 
 다른 이유로 나의 찾기가 필요하다면 이제 다시 켜도 돼요. 다만 앱을 더 설치하거나 갱신하려면 다시 꺼야 해요.
 
-### MacDirtyCow (앱 3개 제한)
+### MacDirtyCow (앱 3개 제한 우회)
 :::note
-MacDirtyCow “앱 3개 제한 우회” 익스플로잇은 **iOS/iPadOS 15.0부터 16.1.2 버전 사이에서만 작동합니다**. 해당 버전이 아닌 경우 작동하지 않으며, **이 문제에 대한 지원을 요청하지 마십시오**. 
+MacDirtyCow "앱 3개 제한 우회" 익스플로잇은 **iOS/iPadOS 15.0부터 16.1.2 버전 사이에서만 작동합니다**. 해당 버전이 아닌 경우 작동하지 않으며, **이 문제에 대한 지원을 요청하지 마십시오**. 
 :::
 [MDC 호환 IPA](https://cdn.discordapp.com/attachments/949183273827983370/1074037820328521829/SideStore_MDC_14.ipa)
 
 이 기능을 원하신다면, 저희 디스코드에 가입하시고 [SideStore Download](https://discord.com/channels/949183273383395328/1126118099930861638) 채널로 이동하시길 권장합니다. 해당 채널에는 MDC 호환 사이드스토어 빌드가 포함되어 있습니다. 그런 다음, [WDBRemoveThreeAppLimit를 SideStore와 별도로 설치](https://github.com/zhuowei/WDBRemoveThreeAppLimit/releases/tag/v1.0)하여 패치를 적용하세요.
+
+## Lara (앱 3개 제한)
+
+:::note
+"Lara" 우회 방법은 **Darksword 익스플로잇**을 사용하며, 이는 **iOS 17.0 ~ iOS 18.7.1 및 iOS 26.0.x**에서만 작동합니다 단, **M5 및 A19 기기**는 포함되지 않아요.
+또한 **iOS 16.7.2**에서도 작동하는 것으로 확인되었어요.
+
+지원되는 버전을 사용하지 않는 경우, **지원을 요청하지 말아주세요**.
+:::
+
+이 방식을 사용하려면 최신 **SideStore 미리보기**가 실행 중인지 확인한 후 **Lara**를 설치해 주세요:
+https://github.com/rooootdev/lara/releases/
+(Lara는 LiveContainer에서도 작동해요.)
+
+### 단계
+
+1. Lara를 열고 **Run Exploit**을 탭하세요
+2. *(처음 한번만)* **Fetch Kernel Cache**을 탭하세요
+3. **Initialize System**을 탭하세요
+4. 화면 하단 중앙에 있는 Lara 로고를 탭하세요
+5. **Apps**으로 가세요
+6. **3-App Bypass**에 들어가 주세요
+7. **Bypass**를 탭하세요.
+
+:::warning
+모든 단계를 완료할 때까지 앱 전환기에서 **절대** lara를 닫지 마십시오.
+:::
+
+8. SideStore를 열어주세요
+9. 끝
+
+:::note
+이는 Apple ID당 10개의 App ID 제한을 **늘려주지** 않습니다.
+:::
+
+새 사이드로드할 앱마다 이 과정을 **반드시** 반복해야 합니다.
